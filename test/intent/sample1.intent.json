@@ -1,0 +1,7 @@
+{
+  "utterance": "youtube hits",
+  "intent_type": "YoutubeHitsIntent",
+  "intent": {
+    "ThankYouKeyword": "youtube hits"
+  }
+}

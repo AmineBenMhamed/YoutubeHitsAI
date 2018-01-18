@@ -16,7 +16,7 @@
 # along with Mycroft Core.  If not, see <http://www.gnu.org/licenses/>.
 
 import subprocess
-import randon
+import random
 
 from adapt.intent import IntentBuilder
 

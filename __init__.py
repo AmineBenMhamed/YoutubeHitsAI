@@ -44,12 +44,16 @@ class YoutubeHitsSkill(MycroftSkill):
     def handle_youtube_hits_intent(self, message):
 
         vid = ["https://www.youtube.com/watch?v=3k4oS0-jnl8","https://www.youtube.com/watch?v=NlsF1dWT30I" ,"https://www.youtube.com/watch?v=a4BWBmFA8xk"]
+        self.speak("Playing youtube music hits")
         self.process = subprocess.Popen(["mpv",random.choice(vid)] )
 
 
 
 
     def stop(self):
+        if self.process:
+            self.process.terminate()
+            self.process.wait()
         pass
 
 
